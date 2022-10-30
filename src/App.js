@@ -32,16 +32,16 @@ function App() {
       })
   }
 
-  const handleGithubSignIn= () =>{
+  const handleGithubSignIn = () => {
     signInWithPopup(auth, githubProvider)
-    .then( result => {
-      const user = result.user;
-      setUser(user);
-      console.log(user);
-    })
-    .catch( error =>{
-      console.error ('error: ', error)
-    })
+      .then(result => {
+        const user = result.user;
+        setUser(user);
+        console.log(user);
+      })
+      .catch(error => {
+        console.error('error: ', error)
+      })
   }
 
   return (
